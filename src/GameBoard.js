@@ -19,8 +19,6 @@ class GameBoard extends Component {
   }
 
   addToken = () =>{
-
-
   }
 
 
