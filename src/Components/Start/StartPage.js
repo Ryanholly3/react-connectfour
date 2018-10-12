@@ -1,33 +1,36 @@
 import React, { Component } from 'react';
 import Modal from "./Modal"
-
+import Modal2 from "./Modal2"
 
 class StartPage extends Component {
 
   render() {
     return (
-      <div>
-        <h1> START PAGE </h1>
+      <div className="m-3">
+        <h1> Looney Tunes Connect 4</h1>
         <form>
           <div className="form-group">
-            <label for="playerOneName">Player 1 Name</label>
+            <label for="playerOneName">Player 1</label>
             <input type="text" className="form-control" id="playerOneName" placeholder="Enter name" />
           </div>
-          <div className="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Pick Character
+  </button>
+          <div className="form-group mt-2">
+            <label for="exampleInputPassword1">Player 2 </label>
+            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Enter name" />
           </div>
-          <div className="form-group form-check">
-            <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-            <label className="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
         </form>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+  Pick Character
 </button>
+<div className="mt-2">
+<button type="submit" className="btn btn-primary">Submit</button>
+</div>
+
 
 <Modal />
+<Modal2 />
 
 
 
