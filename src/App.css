@@ -30,3 +30,10 @@
     transform: rotate(360deg);
   }
 }
+
+.tile {
+  height: 198px;
+  width: 198px;
+  border-style: solid;
+  border-width: 1px;
+}

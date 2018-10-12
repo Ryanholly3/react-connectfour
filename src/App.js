@@ -11,9 +11,18 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state={
-
+      player2: false
     }
   }
+
+
+boxClicked = () => {
+  let toggle = !this.state.player2
+  this.setState({
+    player2: toggle
+  })
+}
+
 
   render() {
     return (
@@ -22,7 +31,7 @@ class App extends Component {
         <AppNav />
         <CurrentPlayer />
         <GameButtons />
-        <GameBoard />
+        <GameBoard boxclick={this.boxClicked} player2={this.state.player2} />
       </div>
     );
   }
